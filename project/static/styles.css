@@ -1,0 +1,223 @@
+.img-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.img-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.barlow-thin {
+    font-family: "Barlow", serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.error_message {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: red;
+}
+
+.navbar-nav>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+}
+
+
+ul li a:hover {
+
+    transform: translate(3px, 3px);
+}
+
+
+.container_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.caudex-regular {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.baskervville {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-body {
+    position: relative;
+}
+
+hr {
+    border: none;
+    overflow: visible;
+    height: 1px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: #E6D4C2;
+}
+
+.active {
+    color: #a5aaa6 !important;
+}
+
+
+
+button {
+    font-family: barlow;
+    font-weight: 100;
+    border: none;
+    transition-duration: 0.4s;
+    background-color: #383E33;
+    color: #E6D4C2;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover {
+
+    color: #BDB76B;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 95px;
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+input {
+    background-color: #EAEBE7 !important;
+    border-color: #D3B683 !important;
+}
+
+select {
+    background-color: #EAEBE7 !important;
+    border-color: #D3B683 !important;
+}
+
+textarea {
+    background-color: #EAEBE7 !important;
+    border-color: #D3B683 !important;
+}
+
+.titan-one-regular {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.sour-gummy {
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+nav {
+    box-shadow: 0 8px 4px -2px #222222;
+}
+
+
+.libre-caslon-display-regular {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove
+{% endblock %}
+
+
+{% block main %}
+
+    <form class="container form-container text-center" action="/remove" method="post">
+        <filedset>
+            <legend class="caudex-regular mb-3" style="color: #BDB76B">Remove items from your menu</legend>
+            <div class="mb-3">
+                <select name="item" class="form-select form-control mx-auto w-auto">
+                    <option disabled selected>Item</option>
+                    {% for item in data %}
+                        <option value="{{ item['item'] }}">{{ item['item'] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% if error_message_remove %}
+                <div class="error_message mb-3">{{ error_message_remove }}</div>
+            {% endif %}
+            <button type="submit">Remove</button>
+        </filedset>
+    </form>
+
+{% endblock %}

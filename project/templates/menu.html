@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main %}
+
+    <form class="container form-container text-center montserrat" action="/menu" method="post">
+        <filedset>
+            <legend class="caudex-regular mb-3" style="color: #BDB76B">Select a style</legend>
+            <div class="mb-3">
+                <select name="style" class="form-select form-control mx-auto w-auto">
+                    <option disabled selected>Style</option>
+                    <option value="Colorful">Colorful</option>
+                    <option value="Illustrational">Illustrational</option>
+                    <option value="Minimalistic">Minimalistic</option>
+                </select>
+            </div>
+            {% if error_message_style %}
+                <div class="error_message mb-3">{{ error_message_style }}</div>
+            {% endif %}
+            <button type="submit">Select</button>
+        </filedset>
+    </form>
+
+{% endblock %}
