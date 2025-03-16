@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Runtime is much lower with sorted data compared to random data.
+Runtime with random data (n=50,000): 6.688s → O(n²)
+Runtime with sorted data (n=50,000): 0.0.452s → Ω(n)
+
+
+sort2 uses: Merge Sort
+
+How do you know?: Lower runtime for random data compared to sort1 and sort3.
+Runtime with random data (n=50,000): 0.447s → O(n log n)
+Runtime with sorted data (n=50,000): 0.437s → Ω(n log n)
+
+
+sort3 uses: Selection Sort
+
+How do you know?: Similar runtimes for both sorted and random data, but significantly higher runtimes compared to sort2.
+Runtime with random data (n=50,000): 3.000s → O(n²)
+Runtime with sorted data (n=50,000): 2.915s → Ω(n²)
+
