@@ -1,0 +1,3 @@
+1 - By calculating the average energy, valence, and danceability of the person’s top 100 songs from 2018. And customising the Aura based on the calculated values.
+
+2 - I think that the parameters that are used to create the aura should include other variables like music genre.
