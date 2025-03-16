@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transaction</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for transaction in data %}
+                <tr>
+                    <td>{{ transaction["symbol"] }}</td>
+                    <td>{{ transaction["shares"] }}</td>
+                    <td>{{ transaction["price"]|usd }}</td>
+                    {% if transaction["action"] == "sold" %}
+                        <td>Sale</td>
+                    {% else %}
+                        <td>Purchase</td>
+                    {% endif %}
+                    <td>{{ transaction["date"] }}</td>
+                </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+{% endblock %}

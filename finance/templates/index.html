@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in data %}
+                {% if data[stock] > 0 %}
+                    <tr>
+                    <td>{{ stock }}</td>
+                    <td>{{ data[stock] }}</td>
+
+                    {% for price in prices %}
+                        {% if stock in price %}
+                            <td>{{ price[stock]|usd }}</td>
+                            <td>{{ (price[stock] * data[stock])|usd }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+
+        </tbody>
+    </table>
+    <table class="table">
+        <tr>
+            <th>Cash</th>
+            <td>{{ cash|usd }}</td>
+        </tr>
+        <tr>
+            <th>TOTAL</th>
+            <td>{{ total|usd }}</td>
+        </tr>
+
+    </table>
+
+
+{% endblock %}

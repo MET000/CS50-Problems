@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <div>Name: {{ name }}</div>
+    <div>Symbol: {{ symbol }}</div>
+    <div>Price: {{ price|usd }}</div>
+
+{% endblock %}

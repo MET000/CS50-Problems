@@ -1,0 +1,126 @@
+.centered {
+    text-align: center;
+}
+
+.main_font {
+    font-family: "Trirong";
+}
+
+#background {
+    background-image: url("HOPE.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+#top_text {
+    color: white;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-left: 1%;
+    opacity: 0.95;
+}
+
+#top_text1 {
+    color: white;
+    font-size: 15px;
+    padding-left: 1%;
+    opacity: 0.95;
+}
+
+#center_text {
+    font-size: 100px;
+    color: white;
+    opacity: 0.8;
+    margin-top: 10%;
+}
+
+#button {
+    background-color: #0b65a1;
+    color: white;
+}
+
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    font-family: "Trirong";
+    font-size: 25px;
+    opacity: 0.8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+
+* {
+    color: white;
+}
+
+
+#tool_members {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+    opacity: 0.9;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+
+#logo {
+    height: 100px;
+    width: 10%;
+}
+
+.tool_albums {
+    display: flex;
+    flex-direction: row;
+    opacity: 0.9;
+}
+
+.background_black {
+    background-color: black;
+}
+
+.image_size {
+    height: 212px;
+    width: 212px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+input {
+    color: black;
+}
+
+#on_tool {
+    padding-top: 8%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+span {
+    float: left;
+    width: 0.7em;
+    font-size: 300%;
+    line-height: 60%;
+}

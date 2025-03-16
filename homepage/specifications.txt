@@ -1,0 +1,22 @@
+<div>
+<h>
+<p>
+<form>
+<input>
+<button>
+<a>
+<b>
+<img>
+<span>
+
+text-decoration
+padding-top
+background-color
+flex-direction
+opacity
+
+
+I used Bootstrap to custom a form elements (input and button).
+I used Javascript to change the font size and update a paragraph text when the button is clicked.
+
+
